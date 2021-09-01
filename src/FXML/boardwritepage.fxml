@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.BoardwritepageController">
+   <children>
+      <Label layoutX="241.0" layoutY="20.0" text="Community">
+         <font>
+            <Font size="31.0" />
+         </font></Label>
+      <Line endX="100.0" layoutX="316.0" layoutY="58.0" startX="-100.0" />
+      <Button fx:id="btnboardwrite" layoutX="98.0" layoutY="332.0" mnemonicParsing="false" onAction="#boardwrite" prefHeight="25.0" prefWidth="394.0" text="Confirm">
+         <font>
+            <Font name="Apple LiGothic Medium" size="13.0" />
+         </font></Button>
+      <TextField fx:id="txttitle" layoutX="98.0" layoutY="66.0" prefHeight="32.0" prefWidth="394.0" promptText="Title">
+         <font>
+            <Font name="Apple LiGothic Medium" size="13.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="txtcontents" layoutX="98.0" layoutY="98.0" prefHeight="228.0" prefWidth="394.0" promptText="Contents">
+         <font>
+            <Font name="Apple LiGothic Medium" size="13.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="btnboardcancel" layoutX="98.0" layoutY="367.0" mnemonicParsing="false" onAction="#boardcancel" prefHeight="25.0" prefWidth="394.0" text="Cancel">
+         <font>
+            <Font name="Apple LiGothic Medium" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

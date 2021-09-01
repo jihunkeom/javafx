@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:controller="Controller.InfoupdateController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Line endX="100.0" layoutX="300.0" layoutY="60.0" startX="-100.0" />
+      <Label layoutX="244.0" layoutY="31.0" text="Info Update">
+         <font>
+            <Font name="Apple LiGothic Medium" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="163.0" layoutY="113.0" text="Original PW">
+         <font>
+            <Font name="Apple LiGothic Medium" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="188.0" layoutY="144.0" text="New PW">
+         <font>
+            <Font name="Apple LiGothic Medium" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="207.0" layoutY="181.0" text="Name">
+         <font>
+            <Font name="Apple LiGothic Medium" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="214.0" text="Email">
+         <font>
+            <Font name="Apple LiGothic Medium" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="202.0" layoutY="251.0" text="Contact">
+         <font>
+            <Font name="Apple LiGothic Medium" size="23.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtpassword" layoutX="277.0" layoutY="112.0" />
+      <PasswordField fx:id="txtnewpassword" layoutX="277.0" layoutY="143.0" />
+      <TextField fx:id="txtname" layoutX="277.0" layoutY="180.0" />
+      <TextField fx:id="txtemail" layoutX="277.0" layoutY="214.0" />
+      <TextField fx:id="txtphone" layoutX="277.0" layoutY="251.0" />
+      <Button fx:id="btnupdate" layoutX="256.0" layoutY="305.0" mnemonicParsing="false" onAction="#update" text="Update">
+         <font>
+            <Font name="Apple LiGothic Medium" size="29.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CommunitypageController">
+   <children>
+      <Label layoutX="241.0" layoutY="20.0" text="Community">
+         <font>
+            <Font size="31.0" />
+         </font></Label>
+      <Line endX="100.0" layoutX="316.0" layoutY="58.0" startX="-100.0" />
+      <Button fx:id="btnboardwrite" layoutX="272.0" layoutY="337.0" mnemonicParsing="false" onAction="#boardwrite" prefHeight="25.0" prefWidth="89.0" text="Write" />
+      <TableView fx:id="tableview" layoutX="125.0" layoutY="76.0" prefHeight="241.0" prefWidth="363.0">
+        <columns>
+          <TableColumn prefWidth="25.0" text="id" />
+          <TableColumn prefWidth="106.0" text="Title" />
+            <TableColumn minWidth="0.0" prefWidth="66.0" text="Author" />
+            <TableColumn prefWidth="125.0" text="Date" />
+            <TableColumn prefWidth="40.0" text="View" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

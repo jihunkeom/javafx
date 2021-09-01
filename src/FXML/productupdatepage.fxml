@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:controller="controllers.ProductupdatepageController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ProductaddpageController">
+   <children>
+      <Label layoutX="297.0" layoutY="10.0" text="Product">
+         <font>
+            <Font name="Apple LiGothic Medium" size="35.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="348.0" layoutY="48.0" startX="-100.0" />
+      <Button fx:id="btnproductupdate" layoutX="404.0" layoutY="360.0" mnemonicParsing="false" onAction="#update" prefHeight="25.0" prefWidth="89.0" text="Update">
+         <font>
+            <Font name="Apple LiGothic Medium" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnproductcancel" layoutX="504.0" layoutY="360.0" mnemonicParsing="false" onAction="#productcancel" prefHeight="25.0" prefWidth="89.0" text="Cancel">
+         <font>
+            <Font name="Apple LiGothic Medium" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="uploadimg" fitHeight="252.0" fitWidth="183.0" layoutX="386.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="txtpname" layoutX="184.0" layoutY="86.0" promptText="Product" />
+      <TextField fx:id="txtpprice" layoutX="184.0" layoutY="242.0" promptText="Price" />
+      <TextArea fx:id="txtpcontents" layoutX="184.0" layoutY="115.0" prefHeight="119.0" prefWidth="161.0" promptText="Description" />
+      <TextField fx:id="txtpstock" layoutX="184.0" layoutY="273.0" promptText="Stock" />
+      <RadioButton fx:id="opt_1" layoutX="178.0" layoutY="310.0" mnemonicParsing="false" text="Upper">
+         <toggleGroup>
+            <ToggleGroup fx:id="category" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="opt_2" layoutX="239.0" layoutY="310.0" mnemonicParsing="false" text="Pants" toggleGroup="$category" />
+      <RadioButton fx:id="opt_3" layoutX="300.0" layoutY="310.0" mnemonicParsing="false" text="ACC" toggleGroup="$category" />
+      <RadioButton fx:id="opt_5" layoutX="271.0" layoutY="328.0" mnemonicParsing="false" text="Shoes" toggleGroup="$category" />
+      <RadioButton fx:id="opt_4" layoutX="207.0" layoutY="328.0" mnemonicParsing="false" text="Bag" toggleGroup="$category" />
+      <Button fx:id="btnupload" layoutX="177.0" layoutY="348.0" mnemonicParsing="false" onAction="#upload" text="Upload pic" />
+      <Label fx:id="lblpath" layoutX="178.0" layoutY="377.0" text="Picture Path : " />
+      <Line endX="-100.0" endY="274.0" layoutX="466.0" layoutY="85.0" startX="-100.0" startY="-12.0" />
+      <Label layoutX="386.0" layoutY="67.0" text="Picture to Upload" />
+      <Button fx:id="btnactivation" layoutX="187.0" layoutY="60.0" mnemonicParsing="false" onAction="#activation" prefHeight="17.0" prefWidth="161.0" text="Preparing">
+         <font>
+            <Font name="Apple LiGothic Medium" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
